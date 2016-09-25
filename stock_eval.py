@@ -27,9 +27,3 @@ def quotes(stuff = AllAPIdict, companies = company_symbols):
 
 def sortDF(df, col, ascend = False ):
     return df.sort_values(by=[col], ascending = ascend)
-
-
-b4 =  time.time()
-a = quotes()
-after = time.time()
-print("tempo para baixar tudo de 200 companias"+ str(after-b4))
